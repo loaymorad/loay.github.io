@@ -1,14 +1,51 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loay</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <!-- Font Awesome 4 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-xOeq0HsbgfC+xcGz9FVj4j+HkIRPls0NiQqLC4Mk79Eo60BGzT4zFjJqOUHnLjxz9vFXpgK1wOcNhkIA3K53FQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/4465f92cc8.js" crossorigin="anonymous"></script>
 
+</head>
+<body>
+    <!-----------------nav bar section---------------------->
+    <nav class="navbar navbar-expand-lg  navbar-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#home"><img class="logo" src="images/logo.svg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contuct-us">Contuct Us</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
 
-    {% block body %}
     <!-----------------Home section---------------------->
 
     <section id="home">
         <div class="container">
             <div class="row">
                 <div class="text-center profile col-md-4">
-                    <img class="img-fluid" src="../static/images/freeloay.png" alt="">
+                    <img class="img-fluid" src="images/freeloay.png" alt="">
                 </div>
                 <div class="title col-md-6 mx-auto">
                     <h1>loay morad</h1>
@@ -34,7 +71,7 @@
                 </div>
             </div>
         </div>
-            <img class="wave" src="../static/images/wave1.png" alt="">
+            <img class="wave" src="images/wave1.png" alt="">
     </section>
 
     <!-----------------projects section---------------------->
@@ -44,7 +81,7 @@
             <div class="row">
                 <div class="col-md-5 text-center card-holder mx-auto">
                     <div class="card mx-auto image-container" style="width: 18rem;">
-                        <a href=""><img src="../static/images/soon.png" class="card-img-top" alt="..."></a>
+                        <a href=""><img src="images/soon.png" class="card-img-top" alt="..."></a>
                         <div class="card-body overlay">
                           <h5 class="card-title">title</h5>
                           <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis pariatur perferendis minus consectetur veniam excepturi.</p>
@@ -54,7 +91,7 @@
 
                 <div class="col-md-5 text-center card-holder mx-auto">
                     <div class="card mx-auto image-container" style="width: 18rem;">
-                        <a href=""><img src="../static/images/soon.png" class="card-img-top" alt="..."></a>
+                        <a href=""><img src="images/soon.png" class="card-img-top" alt="..."></a>
                         <div class="card-body overlay">
                           <h5 class="card-title">title</h5>
                           <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis pariatur perferendis minus consectetur veniam excepturi.</p>
@@ -155,4 +192,23 @@
         </div>
     </section>
 
-{% endblock %}
+    <!-----------------footer section---------------------->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <h5 class="mx-auto">thanks for your attendance</h5>
+            </div>
+            <div class="row">
+                <h5 class="mx-auto">&copy; 2024 loay</h5>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- Bootstrap's JavaScript files "to make bootstrap responsive" -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-pLq5gZkTOIoPrJ+CYvF6ZPQ9wEccO/tVIp/0/BDZU7uf3R68QGzGy8ENHFCl+0a1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
