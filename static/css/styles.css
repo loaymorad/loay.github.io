@@ -1,0 +1,212 @@
+/* Global Rules */
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+:root{
+    --mainfont: white;
+    --sections-padding: 100px;
+    --main-color: #477bff;
+    --secondary-color:#f8f9fa;
+}
+.w-50{
+    display: inline !important;
+    width: 50% !important;
+}
+
+/* End Global Rules */
+
+
+
+/* Nav Bar */
+.navbar{
+    top: 0;
+    z-index: 10;
+    background-image: linear-gradient(to right, #477bff,#5983ec);
+}
+.navbar .logo{
+    width: 75px;
+}
+.navbar ul li{
+    margin: 0 10px 0 10px;
+}
+.navbar ul li a{
+    color: var(--mainfont) !important;
+}
+
+/* Home Section */
+#home{
+    background-image: linear-gradient(to right, #477bff,#5983ec);
+    color: var(--mainfont);
+}
+#home .row .profile img{
+    border-radius: 50%;
+}
+@media (max-width: 768px){
+    #home .row .profile img{
+        width: 70%;
+    }
+    #home .title{
+        text-align: center;
+    }
+    #home .title button{
+        margin-bottom: 10px;
+    }
+}
+#home .row .title{
+    font-size: 34px;
+    font-weight: 600;
+    margin-top: 90px;
+}
+#home .row .title .btn{
+    width: 150px;
+}
+#home .bold{
+    font-weight: bold;
+}
+.wave{
+    width: 100%;
+}
+.fab{
+    color: black;
+}
+
+/* project sections */
+#projects{
+    padding-top: calc(var(--sections-padding));
+    padding-bottom: var(--sections-padding);
+}
+#projects .container .row .card{
+   width: 100% !important;
+   height: 52.5% !important;
+}
+#projects .container .row .card-holder{
+    padding: 10px;
+}
+.section-title{
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.section-title::before{  /* to make line */
+    content: "";
+    background-color: var(--main-color);
+    height: 5px;
+    width: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(45px);
+}
+#projects .more{
+    height: 40px;
+    margin: auto;
+    background-color: transparent;
+    color: var(--main-color);
+}
+#projects .more:hover{
+    background-color: var(--main-color);
+    color: var(--mainfont);
+}
+/* projects inhance */
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container a img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 191%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h2,
+.overlay p {
+    margin: 0;
+}
+
+
+/* reviews section */
+#reviews{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: var(--secondary-color);    
+}
+
+/* Contuct Us section */
+#contuct-us{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+/* footer */
+footer{
+    background-color: var(--main-color);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+footer img{
+    width: 100%;
+    color: var(--main-color);
+}
+footer .container .row{
+    color: var(--mainfont);
+}
+
+
+/* cv.html */
+.life-walkthrow {
+    list-style-type: none;
+}
+.life-walkthrow li {
+    color: var(--main-color);
+}
+.life-walkthrow li span{
+    display: block;
+    font-weight: 700;
+}
+/* make my own bullet */
+.life-walkthrow li:before {
+    content: "•";
+    color: var(--main-color);
+    font-size: 72px;
+    margin-right: 5px;
+    position: relative;
+    left: -35px;
+    top: 67px;
+}
+/* to make footer always in bottom in page no matter the content */
+/* arrange sections as flex in column direction */
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* make cv section take all avilaible space to make footer down */
+.cv{
+    flex: 1;
+}
+
